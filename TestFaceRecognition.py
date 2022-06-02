@@ -15,7 +15,7 @@ import joblib
 import cv2
 
 # Đường dẫn đến video
-test_video ="video/ThayDuc01.mp4"
+test_video ="video/BanDuc01.mp4"
 facenet_model = load_model('facenet_keras.h5')
 detector = MTCNN()
 dest_size = (160, 160)

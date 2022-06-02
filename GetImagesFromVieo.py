@@ -2,7 +2,7 @@ import cv2
 import time
 
 def main():
-    cap = cv2.VideoCapture('video/ThayDuc01.mp4')
+    cap = cv2.VideoCapture('video/BanDuc01.mp4')
     # Resolution 640*480
     time.sleep(1)
     if cap is None or not cap.isOpened():
@@ -23,7 +23,7 @@ def main():
         else:
             break
         if n%4 == 0:
-            filename = 'image/ThayDuc/ThayDuc_%04d.bmp'%(dem)
+            filename = 'image/BanDuc/BanDuc_%04d.bmp'%(dem)
             cv2.imwrite(filename,imgROI)
             dem = dem + 1
         n = n + 1
