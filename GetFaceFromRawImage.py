@@ -46,8 +46,8 @@ def crop_image(source_dir, dest_dir, mode):
        
     return uncropped_file_list
 
-source_dir=r'image\BanDuc' # directory with files to crop
-dest_dir=r'faced_images\BanDuc' # directory where cropped images get stored
+source_dir=r'image\BanVanTinh' # directory with files to crop
+dest_dir=r'faced_images\BanVanTinh' # directory where cropped images get stored
 uncropped_files_list=crop_image(source_dir, dest_dir,1) # mode=1 means 1 face per image
 for f in uncropped_files_list:
     print(f)
